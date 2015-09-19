@@ -7,6 +7,7 @@ import com.github.tnerevival.account.Access;
 import com.github.tnerevival.account.Account;
 import com.github.tnerevival.account.Bank;
 import com.github.tnerevival.core.companies.Company;
+import com.github.tnerevival.core.plots.Plot;
 import com.github.tnerevival.lottery.Lottery;
 
 public class EconomyManager {
@@ -23,6 +24,8 @@ public class EconomyManager {
 	 * Format: Player UUID, Account Class Instance
 	 */
 	public HashMap<UUID, Account> accounts = new HashMap<UUID, Account>();
+	
+	public HashMap<UUID, Plot> plots = new HashMap<UUID, Plot>();
 	
 	/**
 	 * A HashMap holding every company created.
